@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+// ignore: must_be_immutable
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
 
@@ -19,7 +21,22 @@ class LoginPage extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              const Text('Personal Information'),
+              const Text(
+                'Personal Information',
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xff8B010B),
+                ),
+              ),
+              Text(
+                'Personal Information',
+                style: TextStyle(
+                  fontSize: 32.sp,
+                  fontWeight: FontWeight.bold,
+                  color: const Color(0xff8B010B),
+                ),
+              ),
               TextField(
                 controller: nameController,
                 decoration: const InputDecoration(
